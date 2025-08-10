@@ -1,16 +1,4 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <script src="script.js"></script>
-</head>
-<body>
-</body>
-</html>
 <!doctype html>
-
 <html lang="my">
 <head>
   <meta charset="utf-8" />
@@ -74,7 +62,7 @@
 <body>
   <header>
     <div class="brand">
-      <img src="azalea-logo.png" alt="Azalea Stars logo">
+      <img src="azalea-stars-logo.jpg" alt="Azalea Stars logo">
       <div>
         <h1>Azalea Stars</h1>
         <div class="small">Youth engagement · Activities · Community</div>
@@ -100,7 +88,7 @@
       <aside class="hero-right">
         <div class="card pulse">
           <div class="logo-preview">
-            <img src="azalea-logo.png" alt="Azalea Stars logo">
+            <img src="azalea-stars-logo.jpg" alt="Azalea Stars logo">
             <div>
               <div class="meta">Azalea Stars</div>
               <div class="small">Inspiring & empowering youth</div>
@@ -153,15 +141,18 @@
         <div class="social-icons" style="margin-top:20px">
           <a href="https://www.tiktok.com/@azaleastars2006?_t=ZS-8ykgABUyNIw&_r=1" target="_blank" aria-label="TikTok"><i class="fab fa-tiktok"></i></a>
           <a href="https://youtube.com/@azaleastars?si=0NvjLuNmYVlPLkVR" target="_blank" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
-          <a href="https://t.me/+JHCS2NesPVk0YWJl" target="_blank" aria-label="Telegram"><i class="fab fa-telegram"></i></a>
+          <a href="https://t.me/onlinefriend101" target="_blank" aria-label="Telegram" onclick="if(!navigator.userAgent.includes('Telegram')) window.location='tg://resolve?domain=onlinefriend101'">
+  <i class="fab fa-telegram"></i>
+</a>
         </div>
-      </div>/storage/emulated/0/Android/data/com.fazil.htmleditor/files/Documents/Azalea Stars /media/images/IMG_20250808_111252_088.jpg
+        <img src="azalea-stars-logo.jpg" alt="logo" style="width:44px;height:44px;object-fit:contain;border-radius:8px">
+      </div>
     </section>
   </main>
   <footer>
     <div class="footer-inner">
       <div style="display:flex;gap:12px;align-items:center">
-        <img src="azalea-logo.png" alt="logo" style="width:44px;height:44px;object-fit:contain;border-radius:8px">
+        <img src="azalea-stars-logo.jpg" alt="logo" style="width:44px;height:44px;object-fit:contain;border-radius:8px">
         <div>
           <div style="font-weight:700">Azalea Stars</div>
           <div class="small">Connecting youth & community</div>
@@ -175,3 +166,28 @@
   </script>
 </body>
 </html>
+<style>
+  /* ... existing styles ... */
+
+  .social-icons a {
+    font-size: 26px;
+    margin-right: 14px;
+    transition: transform 0.3s ease, color 0.3s ease;
+  }
+
+  .social-icons a:hover {
+    transform: scale(1.2);
+  }
+
+  .social-icons a[aria-label="TikTok"] {
+    color: #010101;
+  }
+
+  .social-icons a[aria-label="YouTube"] {
+    color: #FF0000;
+  }
+
+  .social-icons a[aria-label="Telegram"] {
+    color: #0088cc;
+  }
+</style>
