@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+</head>
+<body>
+</body>
+</html>
+<!doctype html>
+
+<html lang="my">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Azalea Stars — Home</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <style>
+    :root{
+      --bg: #ffffff;
+      --card:#f8fafc;
+      --accent: #6c5ce7;
+      --muted:#6b7280;
+      --radius:14px;
+    }
+    *{box-sizing:border-box}
+    html,body{height:100%;margin:0;font-family:Inter,system-ui,-apple-system,"Segoe UI",Roboto,'Noto Sans Myanmar',sans-serif;background:var(--bg);color:#111}
+    a{color:inherit;text-decoration:none}
+    header{display:flex;align-items:center;justify-content:space-between;padding:18px 28px;background:linear-gradient(180deg,rgba(255,255,255,0.6),transparent);position:sticky;top:0;backdrop-filter:blur(6px);z-index:40}
+    .brand{display:flex;align-items:center;gap:12px}
+    .brand img{width:56px;height:56px;object-fit:contain;border-radius:10px}
+    .brand h1{font-size:18px;margin:0;font-weight:700}
+    nav{display:flex;gap:14px;align-items:center}
+    nav a{font-weight:600;color:var(--muted);padding:8px;border-radius:8px}
+    nav a.cta{background:var(--accent);color:white;padding:8px 12px}
+    .hero{display:grid;grid-template-columns:1fr 420px;gap:30px;align-items:center;padding:48px 6vw}
+    .hero-left{max-width:680px}
+    .eyebrow{display:inline-block;background:linear-gradient(90deg,#f6d365,#fda085);padding:6px 10px;border-radius:999px;font-weight:700;font-size:13px;color:#3b3054}
+    h2{font-size:40px;margin:18px 0 12px;line-height:1.05}
+    p.lead{color:var(--muted);font-size:17px;margin:0 0 20px}
+    .actions{display:flex;gap:12px}
+    .btn{display:inline-flex;align-items:center;gap:10px;padding:12px 16px;border-radius:12px;font-weight:700;border:0;cursor:pointer}
+    .btn.primary{background:var(--accent);color:white}
+    .btn.ghost{background:transparent;border:1px solid #e6e9ef;color:var(--muted)}
+    .hero-right{display:flex;align-items:center;justify-content:center}
+    .card{background:linear-gradient(180deg,rgba(255,255,255,0.8),var(--card));padding:22px;border-radius:18px;box-shadow:0 8px 30px rgba(15,23,42,0.06);width:100%;max-width:420px}
+    .logo-preview{display:flex;align-items:center;gap:14px}
+    .logo-preview img{width:96px;height:96px;object-fit:contain;border-radius:12px}
+    .logo-preview .meta{font-weight:700}
+    section{padding:50px 6vw}
+    .grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
+    .card-sm{background:white;padding:18px;border-radius:12px;box-shadow:0 6px 18px rgba(12,18,30,0.04)}
+    .card-sm h3{margin:6px 0 8px}
+    .activities{display:grid;grid-template-columns:repeat(2,1fr);gap:14px}
+    footer{padding:36px 6vw;background:#fbfbfe;border-top:1px solid #f0f1f6}
+    .footer-inner{display:flex;justify-content:space-between;align-items:center;gap:16px;flex-wrap:wrap}
+    .social-icons a{font-size:20px;color:var(--muted);margin-right:14px;transition:color 0.3s}
+    .social-icons a:hover{color:var(--accent)}
+    @media (max-width:900px){.hero{grid-template-columns:1fr;}.grid{grid-template-columns:repeat(2,1fr)}}
+    @media (max-width:600px){header{padding:12px}.brand h1{font-size:16px}h2{font-size:28px}.grid{grid-template-columns:1fr}.activities{grid-template-columns:1fr}.hero-left{order:2}.hero-right{order:1}}
+    .pulse{animation:pop .9s ease-in-out both}
+    @keyframes pop{from{transform:translateY(6px);opacity:0}to{transform:none;opacity:1}}
+    form{display:grid;gap:10px}
+    input,textarea{width:100%;padding:10px;border-radius:8px;border:1px solid #e6e9ef}
+    textarea{min-height:120px}
+    .small{font-size:13px;color:var(--muted)}
+  </style>
+</head>
+<body>
+  <header>
+    <div class="brand">
+      <img src="azalea-logo.png" alt="Azalea Stars logo">
+      <div>
+        <h1>Azalea Stars</h1>
+        <div class="small">Youth engagement · Activities · Community</div>
+      </div>
+    </div>
+    <nav>
+      <a href="#about">About</a>
+      <a href="#activities">Activities</a>
+      <a href="#contact" class="cta">Contact</a>
+    </nav>
+  </header>
+  <main>
+    <section class="hero">
+      <div class="hero-left">
+        <span class="eyebrow">MYF — Youth Connection</span>
+        <h2>MYF လူငယ်များနှင့် ဆက်သွယ်ရန်နှင့် လှုပ်ရှားမှုများကို ကြည့်ရှုရန်အတွက်</h2>
+        <p class="lead">Azalea Stars သည် လူငယ်များကို မိတ်ဆက်ပေးပြီး community activities များ၊ အရည်အချင်းဖွံ့ဖြိုးရေး၊ event များစီစဉ်ပေးသည့် ဝန်ဆောင်မှုများကို ပံ့ပိုးပေးပါသည်။</p>
+        <div class="actions">
+          <button class="btn primary" onclick="document.getElementById('contact').scrollIntoView({behavior:'smooth'})">Join a Program</button>
+          <a class="btn ghost" href="#activities">See Activities</a>
+        </div>
+      </div>
+      <aside class="hero-right">
+        <div class="card pulse">
+          <div class="logo-preview">
+            <img src="azalea-logo.png" alt="Azalea Stars logo">
+            <div>
+              <div class="meta">Azalea Stars</div>
+              <div class="small">Inspiring & empowering youth</div>
+            </div>
+          </div>
+          <hr style="margin:14px 0;border:none;border-top:1px solid #f0f1f6">
+          <div class="small">Quick Links</div>
+          <div style="display:flex;gap:10px;margin-top:8px">
+            <a class="btn" href="#about">About</a>
+            <a class="btn" href="#contact">Contact</a>
+          </div>
+        </div>
+      </aside>
+    </section>
+    <section id="about">
+      <div style="max-width:1000px;margin:0 auto">
+        <h3>About Azalea Stars</h3>
+        <p class="small">Azalea Stars သည် လူငယ်များအတွက် ပြုပြင်ထိန်းသိမ်းသော community space တစ်ခုဖြစ်ပြီး ရရှိနိုင်သော workshop များ၊ volunteer opportunities များနှင့် event များကို ပံ့ပိုးပေးပါသည်။ မိတ်ဆက်မှု၊ စိတ်ဓာတ်မြှင့်တင်ရေးနှင့် အတူ လက်တွေ့အတွေ့အကြုံများပေးသည်။</p>
+        <div class="grid" style="margin-top:20px">
+          <div class="card-sm"><h3>Workshops</h3><p class="small">Skill-building sessions — leadership, digital skills, arts, and more.</p></div>
+          <div class="card-sm"><h3>Events</h3><p class="small">Community meetups, performances, and local projects for youth engagement.</p></div>
+          <div class="card-sm"><h3>Volunteer</h3><p class="small">Opportunities to lead and contribute to community-led activities.</p></div>
+        </div>
+      </div>
+    </section>
+    <section id="activities">
+      <div style="max-width:1000px;margin:0 auto">
+        <h3>Featured Activities</h3>
+        <div class="activities" style="margin-top:12px">
+          <div class="card-sm"><h4>Creative Lab</h4><p class="small">Design projects and group challenges.</p></div>
+          <div class="card-sm"><h4>Community Cleanup</h4><p class="small">Local volunteer-driven improvement efforts.</p></div>
+          <div class="card-sm"><h4>Digital Workshop</h4><p class="small">Basic web & social media skills for young creators.</p></div>
+          <div class="card-sm"><h4>Performance Night</h4><p class="small">Showcase youth talent — music, dance, and spoken word.</p></div>
+        </div>
+      </div>
+    </section>
+    <section id="contact">
+      <div style="max-width:800px;margin:0 auto">
+        <h3>Contact Us</h3>
+        <p class="small">Meeting info, sign-ups, and partnership inquiries — ဖုန်း/အီးမေးလ် ဖြင့် ဆက်သွယ်ပါ။</p>
+        <form onsubmit="event.preventDefault(); alert('Thanks! This is a demo form. Send details to your email or implement backend.');">
+          <input type="text" placeholder="Your name" required>
+          <input type="email" placeholder="Email" required>
+          <textarea placeholder="How can we help?" required></textarea>
+          <div style="display:flex;gap:10px;align-items:center;justify-content:space-between">
+            <div class="small">We respect your privacy.</div>
+            <button class="btn primary" type="submit">Send</button>
+          </div>
+        </form>
+        <div class="social-icons" style="margin-top:20px">
+          <a href="https://www.tiktok.com/@azaleastars2006?_t=ZS-8ykgABUyNIw&_r=1" target="_blank" aria-label="TikTok"><i class="fab fa-tiktok"></i></a>
+          <a href="https://youtube.com/@azaleastars?si=0NvjLuNmYVlPLkVR" target="_blank" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+          <a href="https://t.me/+JHCS2NesPVk0YWJl" target="_blank" aria-label="Telegram"><i class="fab fa-telegram"></i></a>
+        </div>
+      </div>/storage/emulated/0/Android/data/com.fazil.htmleditor/files/Documents/Azalea Stars /media/images/IMG_20250808_111252_088.jpg
+    </section>
+  </main>
+  <footer>
+    <div class="footer-inner">
+      <div style="display:flex;gap:12px;align-items:center">
+        <img src="azalea-logo.png" alt="logo" style="width:44px;height:44px;object-fit:contain;border-radius:8px">
+        <div>
+          <div style="font-weight:700">Azalea Stars</div>
+          <div class="small">Connecting youth & community</div>
+        </div>
+      </div>
+      <div class="small">© <span id="year"></span> Azalea Stars — All rights reserved</div>
+    </div>
+  </footer>
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
