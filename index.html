@@ -246,3 +246,46 @@
     color: #0088cc;
   }
 </style>
+<audio id="bg-music" src="azaleastars.mp3" loop></audio>
+
+<button id="toggle-music">Play Music</button>
+
+<script>
+  const audio = document.getElementById('bg-music');
+  const btn = document.getElementById('toggle-music');
+
+  // auto play try (may be blocked)
+  window.onload = () => {
+    audio.play().then(() => {
+      btn.textContent = 'Pause Music';
+    }).catch(() => {
+      btn.textContent = 'Play Music';
+    });
+  };
+
+  // button click handler toggle play/pause
+  btn.addEventListener('click', () => {
+    if (audio.paused) {
+      audio.play();
+      btn.textContent = 'Pause Music';
+    } else {
+      audio.pause();
+      btn.textContent = 'Play Music';
+    }
+  });
+
+  // tab visibility change handler: pause when tab inactive, play when active (optional)
+  document.addEventListener('visibilitychange', () => {
+    if (document.hidden) {
+      audio.pause();
+      btn.textContent = 'Play Music';
+    } else {
+      // Optional: auto resume when tab active
+      audio.play().then(() => {
+        btn.textContent = 'Pause Music';
+      }).catch(() => {
+        btn.textContent = 'Play Music';
+      });
+    }
+  });
+</script>
